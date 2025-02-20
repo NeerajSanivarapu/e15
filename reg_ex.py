@@ -105,6 +105,72 @@ wap to find no of special characters present in a string.
 
 
 
+#\w  :---------->>  [a-zA-Z0-9_]
+# import re
+# s='heLLo@_123'
+# res=re.findall(r'\w',s)
+# print(res)
+#['h', 'e', 'L', 'L', 'o', '_', '1', '2', '3']
+
+#\W :------>> [^a-zA-Z0-9_]
+# import re
+# s='heLLo@_123'
+# res=re.findall(r'\W',s)
+# print(res)
+#['@']
+
+#\d  :-----[0-9]
+# import re
+# s='hello@1234'
+# res=re.findall(r'\d',s)
+# print(res)
+#['1', '2', '3', '4']
+
+#\D ------[^0-9]
+# import re
+# s='hello@1234'
+# res=re.findall(r'\D',s)
+# print(res)
+#['h', 'e', 'l', 'l', 'o', '@']
+
+#^ :--- it is used to specify starting letter
+# import re
+# s='apple'
+# res=re.findall('^a',s)
+# print(res)
+#['a']
+
+#$ --- it is used to specify ending letter
+# import re
+# s='qspiders'
+# res=re.findall('s$',s)   #[]
+# if res:
+#     print('given string is ending with s')
+# else:
+#     print('given string is not ending with s')
+
+#starts with h end's with o
+# import re
+# s='hello'
+# res=re.findall('^h.*o$',s)
+# print(res)
+#['hello']
+
+#wap to check whether second letter of a string is "s" or not
+# import re
+# s='qspiders'
+# res=re.findall('^.s..*',s)
+# print(res)
+#
+# #['qspiders']
+
+
+
+
+
+
+
+
 
 
 
